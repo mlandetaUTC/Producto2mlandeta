@@ -1,0 +1,24 @@
+@(restaurantes1: java.util.List[Restaurante])
+
+<html>
+<head>
+<body>
+	<table cellspacing="1"  border="2px">
+		    <tr>
+		    	<th scope="col" bgcolor="#FFFF00">ID</th>
+		    	<th scope="col" bgcolor="#FFFF00">NOMBRE DE PEDIDO</th>
+		    	<th scope="col" bgcolor="#FFFF00">CANTIDAD</th>
+		    	<th scope="col" bgcolor="#FFFF00">PRECIO</th>
+		    </tr>
+			@for(restaurante <- restaurantes1) {		   
+			  <tr>
+			      <td>@restaurante.id</td>
+			      <td>@restaurante.name</td>
+			      <td>@restaurante.cantidad</td>
+			      <td>@restaurante.precio</td>
+		      </tr>	
+		      }
+		 </table>
+</body>
+</head>
+</html>
